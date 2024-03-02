@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { FaInstagram } from 'react-icons/fa'
+import { GrMapLocation } from 'react-icons/gr'
 
 const page = () => {
   const links = [
@@ -81,7 +82,7 @@ const page = () => {
         <img src="/bg.png" className="fixed top-[25%] right-[2%] w-[90px]" />
       </div>
       <div className="w-full md:w-1/3 z-10 p-4 px-6 header flex flex-row justify-center items-center gap-5">
-          <div className=''>
+          <div className='flex flex-col'>
             <div className='flex relative m-auto justify-center items-center p-1 md:p-3 w-[130px] h-[130px] md:w-[270px] md:h-[270px] bg-white rounded-full shadow-xl'>
               <div className='w-full h-full border-[2px] md:border-[5px] border-[#5E005E] rounded-full p-3 md:p-6'>
                 <img
@@ -91,6 +92,23 @@ const page = () => {
                 />
               </div>
             </div>
+
+            <div className='hidden md:block mt-10 mb-5 text-center'>
+            <div className='w-[70%] m-auto bg-violet-800 pb-[4px] rounded-xl'>
+              <div className='w-full m-auto bg-white p-[2px] py-4 rounded-xl'>
+                <h2 className='text-xl text-black mb-3'>Store Location</h2>
+                <div className='flex flex-col justify-center items-center text-center px-4'>
+                  <a href="https://maps.app.goo.gl/hHvGG1GdmmeYAHXF6" target='_blank' className='text-black text-center'>
+                    <GrMapLocation size={50} />
+                  </a>
+                  <div className='w-full text-center text-black'>
+                    Jl. Kabut No. 94, Panggung, Jebres, Kec. Jebres, Surakarta
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           </div>
       </div>
 
@@ -147,10 +165,26 @@ const page = () => {
             </div>)}
           </div>  
 
+          <div className='md:hidden mt-10 mb-5 text-center'>
+            <div className='w-[70%] m-auto bg-violet-800 pb-[4px] rounded-xl'>
+              <div className='w-full m-auto bg-white p-[2px] py-4 rounded-xl'>
+                <h2 className='text-xl text-black mb-3'>Store Location</h2>
+                <div className='flex flex-col justify-center items-center text-center px-4'>
+                  <a href="https://maps.app.goo.gl/hHvGG1GdmmeYAHXF6" target='_blank' className='text-black text-center'>
+                    <GrMapLocation size={50} />
+                  </a>
+                  <div className='w-full text-center text-black'>
+                    Jl. Kabut No. 94, Panggung, Jebres, Kec. Jebres, Surakarta
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className='mt-10 mb-5 text-center'>
             <h2 className='text-xl text-white mb-3'>Follow Us</h2>
             <div className='flex justify-center items-center text-center'>
-              <a href="https://www.instagram.com/beautycat_id/" className='text-white text-center'>
+              <a href="https://www.instagram.com/beautycat_id/" target='_blank' className='text-white text-center'>
                 <FaInstagram size={50} />
               </a>
             </div>
