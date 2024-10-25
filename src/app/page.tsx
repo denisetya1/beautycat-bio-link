@@ -6,19 +6,19 @@ const page = () => {
   const links = [
     {
       title: "Shopee 1",
-      url: "https://shp.ee/uu9wukk",
+      url: "https://shopee.co.id/beautycat_id",
       image: "/shopee-logo.png"
     },
     {
       title: "Shopee 2",
-      url: "https://shp.ee/esug3y3",
+      url: "https://shopee.co.id/skincarebycat",
       image: "/shopee-logo.png"
     },
-    {
-      title: "Shopee",
-      url: "https://shp.ee/2nheyv5",
-      image: "/shopee-logo.png"
-    },
+    // {
+    //   title: "Shopee",
+    //   url: "https://shp.ee/2nheyv5",
+    //   image: "/shopee-logo.png"
+    // },
     {
       title: "Lazada 1",
       url: "https://s.lazada.co.id/s.NvjMT",
@@ -82,18 +82,18 @@ const page = () => {
         <img src="/bg.png" className="fixed top-[25%] right-[2%] w-[90px]" />
       </div>
       <div className="w-full md:w-1/3 z-10 p-4 px-6 header flex flex-row justify-center items-center gap-5">
-          <div className='flex flex-col'>
-            <div className='flex relative m-auto justify-center items-center p-1 md:p-3 w-[130px] h-[130px] md:w-[270px] md:h-[270px] bg-white rounded-full shadow-xl'>
-              <div className='w-full h-full border-[2px] md:border-[5px] border-[#5E005E] rounded-full p-3 md:p-6'>
-                <img
-                  src="/logo-beautycat-qos.png"
-                  alt="Beautycat - Queen of Skincare"
-                  className='w-full h-full object-contain'
-                />
-              </div>
+        <div className='flex flex-col'>
+          <div className='flex relative m-auto justify-center items-center p-1 md:p-3 w-[130px] h-[130px] md:w-[270px] md:h-[270px] bg-white rounded-full shadow-xl'>
+            <div className='w-full h-full border-[2px] md:border-[5px] border-[#5E005E] rounded-full p-3 md:p-6'>
+              <img
+                src="/logo-beautycat-qos.png"
+                alt="Beautycat - Queen of Skincare"
+                className='w-full h-full object-contain'
+              />
             </div>
+          </div>
 
-            <div className='hidden md:block mt-10 mb-5 text-center'>
+          <div className='hidden md:block mt-10 mb-5 text-center'>
             <div className='w-[70%] m-auto bg-violet-800 pb-[4px] rounded-xl'>
               <div className='w-full m-auto bg-white p-[2px] py-4 rounded-xl'>
                 <h2 className='text-xl text-black mb-3'>Store Location</h2>
@@ -109,13 +109,13 @@ const page = () => {
             </div>
           </div>
 
-          </div>
+        </div>
       </div>
 
       <div className="w-full md:w-1/3 z-10">
         <div className='w-full h-full flex flex-col gap-4 justify-center items-center'>
           <div className='w-full flex flex-col justify-items-center items-center gap-4'>
-            {links.map((item, idx) => <div key={idx} 
+            {links.map((item, idx) => <div key={idx}
               className='m-auto block bg-violet-800 pb-[5px] rounded-full w-[70%] shadow-md'
             >
               <a href={item.url}
@@ -123,14 +123,14 @@ const page = () => {
                 target='_blank'
               >
                 <div className='relative h-full w-[50px] rounded-full overflow-hidden'>
-                    <Image
-                        src={item.image}
-                        alt={item.image}
-                        className='h-full w-auto rounded-full'
-                        fill
-                        objectFit='contain'
-                        loading="lazy"
-                      />
+                  <Image
+                    src={item.image}
+                    alt={item.image}
+                    className='h-full w-auto rounded-full'
+                    fill
+                    objectFit='contain'
+                    loading="lazy"
+                  />
                 </div>
                 <div className='grow py-4 pr-6 text-center'>{item.title}</div>
               </a>
@@ -143,7 +143,7 @@ const page = () => {
         <div className='w-full h-full flex flex-col gap-4 justify-center items-center'>
           <h2 className='text-xl text-white mt-10 mb-3'>Contact Us</h2>
           <div className='w-full flex flex-col justify-items-center items-center gap-4'>
-            {contacts.map((item, idx) => <div key={idx} 
+            {contacts.map((item, idx) => <div key={idx}
               className='m-auto block bg-violet-800 pb-[5px] rounded-full w-[70%]'
             >
               <a href={item.url}
@@ -151,19 +151,19 @@ const page = () => {
                 target='_blank'
               >
                 <div className='relative h-full w-[50px] rounded-full'>
-                    <Image
-                        src={item.image}
-                        alt={item.image}
-                        className='h-full w-auto'
-                        fill
-                        objectFit='contain'
-                        loading="lazy"
-                      />
+                  <Image
+                    src={item.image}
+                    alt={item.image}
+                    className='h-full w-auto'
+                    fill
+                    objectFit='contain'
+                    loading="lazy"
+                  />
                 </div>
                 <div className='grow py-4 pr-6 text-center'>{item.title}</div>
               </a>
             </div>)}
-          </div>  
+          </div>
 
           <div className='md:hidden mt-10 mb-5 text-center'>
             <div className='w-[70%] m-auto bg-violet-800 pb-[4px] rounded-xl'>
